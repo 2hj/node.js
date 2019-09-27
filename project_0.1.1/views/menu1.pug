@@ -1,0 +1,42 @@
+extends menu
+
+block login
+  a.log_button(href='/menu1/login') Log In
+
+block logout
+  a.log_button(href='/auth/menu1/logout') Logout
+
+block content
+  #menu3_title
+    h1.menu3_title 조원소개
+  #member
+    #main_section
+      .article_header
+        //- h1.article_title WDJ - 7 Member
+        if user
+          script.
+            var login = true;
+          input#user_id(type='hidden' value=user.u_id)
+          img#patch_icon(src="/images/modify.png",onclick="patch_start()")
+        else
+          script.
+              var login = false;
+        #memberinfo
+          #member_show
+            img#member_image
+          #member_text
+            #member_name
+            span - 학번 -
+            #member_num
+            span - 코멘트 -
+            #member_comm
+            span - 각오 -
+            #member_res
+      .dotGroup
+        span#dot1.dot(type="button" onclick='getMember(1)')
+        span#dot2.dot(type="button" onclick='getMember(2)')
+        span#dot3.dot(type="button" onclick='getMember(3)')
+        span#dot4.dot(type="button" onclick='getMember(4)')
+        span#dot5.dot(type="button" onclick='getMember(5)')
+
+  script(src="/javascripts/menu1.js")

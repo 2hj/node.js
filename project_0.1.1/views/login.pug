@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    title= title
+  body
+    .container_login
+      .login_wrap_login
+        h1 Sign&nbsp;In
+        form(action='/auth'+url, method="post")
+          .input-group_login
+            label(for='userId') ID
+            input#id_login(type='text' name='username' placeholder="id" required autofocus)
+          .input-group_login
+            label(for='password') PW
+            input#password_login(type='password' placeholder="password" name='password' required)
+          .error_message_login= loginError
+          button#login.btn(type='submit') Log In
+          .orBar
+            hr(noshade)
+            p.or or
+            hr(noshade)
+          p#joinP Create Account
+          #joinBtn_login
+            a#join_login.btn(href='/join') Sign Up
+    
+        

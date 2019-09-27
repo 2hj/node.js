@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Permanent+Marker|Playfair+Display:900|Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+body{
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url("../images/bodyImg.png");
+    background-size: 100%;
+    
+}
+/* ---------main화면---------- */
+#page_wrapper{
+    margin: 0 auto;
+    width: 1200px;
+    height: 700px;
+    margin: 65px 0 65px 0;
+}
+#main_header{
+    margin:0 auto;
+    margin-top:0px;
+}
+.master_title{
+    text-align: center;
+    /* width: 100px; */
+    width: 100%;
+    /* font-size: 140px; */
+    font-size: 110px;
+    /* line-height: 150px; */
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: 900;
+    margin: 0px 0px 20px 0px;
+}
+.master_title a {
+    color: white;
+    text-decoration: none;
+}
+.master_description{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: 300;
+    margin: 20px 0px 0px 0px;
+    letter-spacing: 8px;
+}
+
+.outer_menu{
+    list-style: none;
+    padding: 0;
+    width: 782px;
+    padding: 80px 0 80px 0;
+    margin: 0 auto;
+}
+.outer_menu_item {
+    display: inline-block;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+.outer_menu_item:hover{
+   transform:scale(1.2);
+}
+.outer_menu_item:nth-child(2n){
+    margin: 0 160px 0 160px;
+}
+hr{
+    color: white;
+    background-color:white;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    height: 1px;
+}
+.outer_menu_item a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.login_bar{
+    width: 200px;
+    margin: 0 auto;
+    height: 80px;
+}
+.input_login_button{
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    border: 1px solid white;
+    /* background-color: rgba(255,255,255, 0); */
+    /* background-color: rgba(160, 255, 135, 0.4); */
+    background-color: rgba(67, 201, 32, 0.7);
+    transition: transform 0.2s ease;
+}
+.input_login_button a{
+    font-size: 30px;
+    color: white;
+    font-family: 'Ramabhadra', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+}
+.input_login_button:hover{
+    /* background: linear-gradient(to bottom, rgba(255,255,255, 0.2) 5%, rgba(255,255,255, 0.5)); */
+    /* background-color: rgba(255,255,255, 0.2); */
+    /* background-color: rgb(61, 158, 37);     */
+    background-color: rgba(67, 201, 32, 0.9);
+    transform:scale(1.05);
+}
+.input_login_button a:hover{
+    /* color: #a0f489; */
+    /* color: #a0ff87; */
+}
+
+/* 로그인 후 */
+.self_profile_text{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#logout_div{
+    width: 150px;
+    height: 70px;
+    margin: auto;
+    background-color: rgba(239, 31, 31, 0.4);
+    transition: transform 0.2s ease;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.input_logout_button{
+    text-align: center;
+    line-height: 70px;
+    display: block;
+    color: white;
+    font-size: 25px;
+    font-family: 'Ramabhadra', sans-serif;
+    text-decoration: none;
+}
+#logout_div:hover{
+    transform:scale(1.05);    
+    background-color: rgba(239, 31, 31, 0.7);
+
+}
+/* ----- */
+
+#main_footer{
+    width: 150px;
+    margin: auto;
+    margin-top: 100px;
+}
+#main_footer a{
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: transform 0.1s ease;
+}
+#main_footer a:hover{
+    transform:scale(1.03);
+}
+
+/* --------login화면-------- */
+
+.container_login{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 830px;
+}
+
+.login_wrap_login{
+    /* border-radius: 15px; */
+    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(255,255,255,0.2); */
+    width: 500px;
+    height: 600px;
+}
+.login_wrap_login > h1{
+    color: white;
+    /* color: black; */
+    font-size: 50px;
+    font-family: 'Ramabhadra', sans-serif;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    margin:20px auto; 
+}
+.input-group_login label{
+    display: inline-block;
+    text-align: center;
+    width: 138px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Ramabhadra', sans-serif;
+}
+#id_login {
+    width: 200px;
+    height: 35px;
+}
+#password_login {
+    width: 200px;
+    height: 35px;
+}
+.error_message_login{
+    width: 200px;
+    margin: 10px auto;
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#login {
+    display: block;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin: auto;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Ramabhadra', sans-serif;
+    border: 1px solid white;
+    border-radius: 15px;
+    /* background-color: rgba(255,255,255, 0); */
+    background-color: rgba(67, 201, 32, 0.4);    
+    /* background-color:  #43c92066; */
+    transition: transform 0.2s ease;
+}
+#login:hover{
+    background-color: rgba(67, 201, 32, 1);
+    /* background-color: #23820a; */
+    /* background-color: rgba(255,255,255, 1); */
+    /* background-color:  rgba(67, 201, 32, 0.3); */
+    transform:scale(1.05);
+    /* color: #23820a; */
+    /* color: #a0f489; */
+    /* color: white; */
+}
+.orBar{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.orBar hr{
+    color: white;
+    height: 1px;
+    border: 0;
+    width: 35%;
+    margin: 10px 0 10px 0;
+}
+.orBar .or{
+    color: white;
+    margin: 0 10px;
+}
+
+#joinP {
+    color: white;
+    width: 150px;
+    margin: 5px auto;
+    font-size:18px;
+    text-align: center;
+    font-family: 'Ramabhadra', sans-serif;
+}
+#joinBtn_login{
+    width: 170px;
+    margin: auto;
+    height: 50px;
+    /* background-color: rgba(255,255,255, 0.1); */
+    background-color:rgba(116, 137, 242, 0.4);
+    border: 1px solid white;
+    line-height: 50px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+#join_login{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Ramabhadra', sans-serif;
+}
+#joinBtn_login:hover{
+    background-color:rgba(116, 137, 242, 1);
+    /* background: linear-gradient( to bottom, rgba(226, 233, 255, 0.5) 5%, rgba(116, 137, 242, 0.4)); */
+    /* background-color: rgba(255,255,255, 0.7); */
+    /* background-color:rgba(116, 137, 242, 0.4); */
+    transform:scale(1.05);
+}
+#join_login:hover{
+    /* color: #7489f2; */
+    /* color: white; */
+}
+
+/* -------회원가입 화면------- */
+
+.container_join{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 830px;
+}
+.login_wrap_join{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.6);
+}
+#title_join_div{
+    width: 400px;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title_join{
+    color: white;
+    font-size: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.login_wrap_join form{
+    float: right;
+    width: 600px;
+    height: 100%;
+}
+.input-group_join{
+    width: 430px;
+    margin: 15px auto;
+}
+.input-group_join label{
+    font-size: 30px;
+    color: white;
+    font-family: 'Ramabhadra', sans-serif;
+}
+.input-group_join input{
+    width: 400px;
+    height: 45px;
+}
+
+.error_message_join{
+    width: 200px;
+    margin: 10px auto;
+    color: white;
+    text-decoration: underline;
+}
+
+#join {
+    width: 170px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 33px;
+    background-color: rgba(38, 77, 255, 0.5);
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+#join:hover{
+    transform:scale(1.05);
+    background-color: rgba(38, 77, 255, 1);
+}

@@ -1,0 +1,85 @@
+extends menu
+
+block login
+  a.log_button(href='/menu3/login') Log In
+
+block logout
+  a.log_button(href='/auth/menu3/logout') Logout
+
+block content
+  #read-title
+    h3 Q & A 
+    h1#read-big-title
+  #content-read
+    #question-read
+      table(border='1' style='width:900px')
+        colgroup
+          col(width='15%')
+          col(width='*%')
+        tbody
+          tr
+            th 제목
+            td#read-small-title
+          tr
+            th 작성자
+            td#read-name
+          tr
+            th 내용
+            td#read-question
+      -if(user && user.u_id==u_id)
+        script.
+          var allowQus = true;
+        #question-button
+          button#question-update(type='button') 글수정
+          button#question-delete(type='button') 글삭제
+        br
+      -else
+        script.
+          var allowQus = false;
+    hr
+    #answer-read
+      table(style='width:900px')
+        colgroup
+          col(width='10%')
+          col(width='10%')
+          col(width='10%')
+          col(width='*%')
+          col(width='5.5%')
+          col(width='5.5%')
+        thead
+          tr
+            td#total-answer= "댓글"
+            td 조회수 0
+            td 좋아요 0
+            td
+            td
+            td
+        tbody
+          tr
+            th 장현호
+            td 날짜
+            td 시간
+            td 답글달기
+            td 수정
+            td 삭제
+          tr
+            td(colspan='6') 댓글입니다. 이렇게 나온다고 보면 됩니다.
+      input#q_id(type='hidden' value=q_id)
+    hr
+    #answer-write
+      if user
+        script.
+          var allowAns = true;
+        form#answer-form
+          input#userid(type='hidden' value=user.u_id)
+          input#username(type='hidden' value=user.u_name)
+          input#targetid(type='hidden' value=q_id)
+          textarea#answer(name="answer", cols="90", rows="5" placeholder="여기에 답변을 써주세요.")
+          button(type='submit') 등록
+      else
+        script.
+          var allowAns = false;
+        textarea(name="answer", cols="90", rows="5" placeholder="댓글을 이용하시려면 먼저 로그인 해주세요." readOnly)
+  #content-back
+    button#back(type='button') 목록
+  script(src='/javascripts/read.js')

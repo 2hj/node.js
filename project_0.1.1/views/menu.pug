@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html
+  head
+    meta(charset="UTF-8")
+    title= title
+    link(href="https://fonts.googleapis.com/css?family=Do+Hyeon|Dosis&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/menu.css')
+  body
+    .backgroundImg    
+      .header 
+        a.master_description(href='/') 2WDJ - 7チーム
+        .navi
+          .naviContent
+            ul.outer_menu
+              l1.outer_menu_item
+                a(href="/menu1") 조원소개
+              l1.outer_menu_item
+                a(href="/menu2") 현지학기제
+              l1.outer_menu_item
+                a(href="/menu3") Q & A
+        .right_top
+          if !user
+            .login_bar
+              block login
+          else
+            - var name = user.u_name
+            .logout_bar
+              p.self_profile_text #{name}님 어서오세요
+              .logout_btn
+                block logout
+      
+      #contents-wrapper
+        
+
+        block content
+
+        hr
+
+      #main_footer
+        a(href="https://www.yju.ac.kr/kr/index.do") 영진전문대학교

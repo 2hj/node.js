@@ -1,0 +1,32 @@
+extends menu
+
+block login
+  a.log_button(href='/menu3/login') Log In
+
+block logout
+  a.log_button(href='/auth/menu3/logout') Logout
+
+block content
+  #menu3_title
+    h1.menu3_title Q & A
+  #menu3-wrapper
+    #content-list
+      table(border='1' style='width:600px')#question-list
+        colgroup
+          col(width='8%')
+          col(width='*%')
+          col(width='15%')
+          col(width='15%')
+        
+        thead
+          tr
+            each tamp in ["번호", "제목", "작성자", "작성일"]
+              th= tamp
+        tbody
+      button#go-write(type='button') 글쓰기
+      br
+      br
+      hr
+      table#question-index
+        thead
+  script(src='/javascripts/menu3.js')

@@ -1,0 +1,30 @@
+extends menu
+
+block login
+    a.log_button(href='/menu2/login') Log In
+
+block logout
+    a.log_button(href='/auth/menu2/logout') Logout
+
+block content
+  #menu3_title
+    h1.menu3_title 현지학기제
+  #content
+    #main_section
+      #article
+        br
+        br
+        .article_body
+          ul.menu
+            #mainlist 
+              li#main1 무엇을 하나요? 
+              li#main2(type="button") 평일 시간표    
+              li#main3(type="button") 문화 체험지  
+            #what 
+                br
+                img(src="/images/power.JPG", alt="이미지 없음")
+            #japan_scj
+                br
+                img(src="/images/time.jpg", alt="이미지 없음")         
+            #japan_table_div
+    script(src="/javascripts/menu2.js")

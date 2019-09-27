@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html
+  head
+    meta(charset="UTF-8")
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body        
+    #page_wrapper
+      #main_header
+        #hgroup
+            h1.master_title
+                a(href='/') Node.js Team Project
+            h2.master_description 2WDJ 7チーム
+      #main_navigation
+        .pull_left
+          ul.outer_menu
+            l1.outer_menu_item
+              hr#bar1(noshade)
+              a(href="/menu1") 조 원 소 개
+            l1.outer_menu_item
+              hr#bar2(noshade)
+              a(href="/menu2") 현 지 학 기 제
+            l1.outer_menu_item
+              hr#bar3(noshade)
+              a(href="/menu3") Q &amp; A
+        .pull_right
+          .login_bar
+            if !user
+              .input_login_button
+                a(href="/main/login") Sign In
+            else
+              - var name = user.u_name
+              p.self_profile_text #{name}님</br>어서오세요
+              #logout_div
+                a.input_logout_button(href='/auth/main/logout') Logout
+      block content
+
+      #main_footer
+        a(href="https://www.yju.ac.kr/kr/index.do") 영진전문대학교
+
+    

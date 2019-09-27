@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300|Yeon+Sung&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Permanent+Marker|Playfair+Display:900|Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+  width: 1200px;
+  margin: 0 auto;
+  /* background-image: url("../images/bodyImg.png"); */
+  background-size: 100%;
+    
+}
+.background-gradient{
+  color: linear-gradient(to bottom, rgba(255,255,255,0),rgba(255,255,255,1));
+  
+}
+.backgroundImg {
+  height: 200px;
+  background-image: url("../images/menuImg.png");
+  /* background-image: url("./bodyImg.png");  */
+  background-position-y: 60px; 
+  background-size: 100%;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+.header{
+  width: 1300px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.master_description{
+    font-size: 30px;
+    margin-left: 30px;
+    height: 100%;
+    line-height: 60px;
+    display: block;
+    float: left;
+    width: 250px;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.right_top{
+  display: inline-block;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 300px;
+    margin: 0 30px;
+    height: 100%;
+    /* line-height: 70px; */
+}
+/* ----로그인 바----- */
+.login_bar{
+  width: 100px;
+  float: right;
+  margin-right: 30px;
+  height: 100%;
+  line-height: 60px;
+  transition: all 0.3s;
+}
+.login_bar a{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.login_bar:hover{
+  background-color: #5b87ff;
+}
+.login_bar a:hover{
+  color: white;
+}
+
+.log_button{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ----어서오세요, 로그아웃---- */
+.logout_bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+.self_profile_text{
+  color: black;
+  /* width: 200px; */
+  margin: 0;
+  /* padding: 0 30px; */
+  display: flex;
+  height: 100%;
+  line-height: 70px;
+}
+.logout_btn{
+  margin: 0;
+  width: 100px;
+  display: flex;
+  height: 100%;
+  transition: all 0.3s;
+}
+.logout_btn a{
+  line-height: 70px;
+  text-align: center;
+  width: 100%;
+}
+.logout_btn:hover{
+  background-color: #ff6b6b;
+}
+.logout_btn:hover a{
+  color: white;
+}
+.navi{
+  height: 61px;
+  width: 300px;
+  margin: 0 auto;
+}
+.naviContent{
+  height: 100%;
+  display: inline-block;
+}
+.outer_menu{
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  
+}
+.outer_menu_item{
+  height: 100%;
+  padding: 0 10px;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  transition: all 0.3s;
+}
+.outer_menu_item a{
+  color: black;
+}
+.outer_menu_item:hover{
+  background-color:black;
+}
+.outer_menu_item:hover a{
+  color: white;
+}
+
+#contents-wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+/* --------t상단바 디자인 끝--------- */
+
+/* -------본문------- */
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* made by scope */
+  #what{
+
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #japan_scj {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+
+  }
+
+  #japan_table_div {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+
+  }
+
+
+  #main1{
+    font-family: 'Do Hyeon', sans-serif;
+    display: inline-block;
+    width: 250px;
+  line-height: 50px;
+  text-align: center;
+  background:#1AAB8A;
+  color:#fff;
+  border-radius:10px;
+  font-size:1.6em;
+  cursor:pointer;
+ 
+}
+  
+#main2{
+  font-family: 'Do Hyeon', sans-serif;
+  display: inline-block;
+  border-radius:10px;
+  width: 250px;
+  margin-right: 150px;
+  margin-left: 150px;
+  line-height: 50px;
+  text-align: center;
+  background:black;
+  color:#fff;
+  font-size:1.6em;
+  cursor:pointer;
+
+}
+
+
+
+#main3{
+  font-family: 'Do Hyeon', sans-serif;
+  border-radius:10px;
+  display: inline-block;
+  width: 250px;
+  line-height: 50px;
+  text-align: center;
+  background:black;
+  color:#fff;
+  font-size:1.6em;
+  cursor:pointer;
+
+}
+
+
+
+.menu{
+  width: 1050px;
+  padding: 0;
+}
+
+#content{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+#japan_place{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 350%; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+  color: #666; 
+  border-bottom: 2px solid #ccc; 
+  border-left: 10px solid #55555B;; 
+  padding: 3px 5px;
+  margin: 5px 0;
+  letter-spacing: 1px;
+  word-spacing: 3px; 
+}
+
+#japan_explain{
+  font-size: 160%; 
+  font-family: 'Do Hyeon', sans-serif;
+  
+}
+
+#japan_img img{
+  border: 10px solid #DCDCDC;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius:10px 0 10px 0; 
+ 
+}
+
+#japan_explain {
+   margin-bottom: 100px;
+}
+
+/*장재일 시작*/
+#patch_icon {
+  position: absolute;
+  margin-left: 1050px;
+  margin-top: 500px;
+}
+#member_name {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.article_header > h1 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+#member_show {
+  width: 50%;
+  float: left;
+}
+#member_text {
+  font-size: 2em;
+  font-family: 'Do Hyeon', sans-serif;
+  width:50%;
+  height: 560px;  
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+#member_image {
+  width: 550px;
+  height: 560px;
+}
+#member-link {
+  width:1100px;
+  height:100px;
+}
+#member-link > img {
+  display: block;
+}
+.dotGroup{
+  width: 1100px;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+#member{
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 50px;
+}
+/*장재일 끝*/
+/* -----이혜진------ */
+/* -------질의응답------- */
+
+/* ---menu3--- */
+#menu3_title{
+  margin: 48px auto;
+}
+.menu3_title{
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+#content-list{
+  margin-top: 70px;
+}
+#question-list{
+  margin: 10px auto 0 auto;
+  margin-bottom: 10px;
+}
+#go-write{
+  float: right;
+  display: block;  
+  margin-right: 300px;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  font-weight: 700;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+}
+#question-index{
+  margin: 10px auto 0 auto;
+}
+
+/* ---write--- */
+#write-wrapper{
+  width: 100%;
+  
+}
+#content-write{
+  width: 800px;
+  margin: 0 auto;
+}
+
+#write_title h3, h1{
+  text-align: center;
+  color: white;
+}
+#question-create-form{
+  display: block;
+  width: 700px;
+  margin: 70px auto 0 auto;
+}
+.input-group_form #name{
+  margin-left: 20px;
+}
+.input-group_form #title{
+  margin-left: 36px;
+}
+.input-group_form #question{
+  margin-left: 36px;
+  display: block;
+}
+.write_btn{
+  background-color: white;
+  width: 60px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* ---read--- */
+/* #read-title{
+  width: 100%;
+  margin: 48px 0;
+} */
+#read-title h1, h3{
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#question-read{
+  display: block;
+  width: 900px;
+  margin: 70px auto;
+}
+#question-button{
+  float: right;
+}
+#question-update{
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 5px 10px 0 10px;
+  display: inline-block;
+}
+#question-delete{
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 5px 20px 0 10px;
+
+}
+#answer-read{
+  display: block;
+  width: 900px;
+  margin: 20px auto;
+}
+#answer-read thead{
+  background-color: #ddf;
+}
+#answer-read tbody{
+  background-color: #ddd;
+}
+#answer-write{
+  display: block;
+  width: 760px;
+  margin: 20px auto;
+}
+#answer-form textarea{
+  display: inline-block;
+}
+#answer-form button{
+  float: right;
+  display: block;
+  /* margin: 20px auto; */
+  background-color: white;
+  width: 100px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 700;
+}
+#answer-form button:hover{
+  background-color: #efefef;
+}
+#answer-form button:active{
+  background-color: #efefef;
+}
+#content-back{
+  width: 60px;
+  margin: 0 auto;
+}
+#back{
+  width: 60px;
+  height: 30px;
+  background-color: #fcd144;
+  border: 1px solid #5b3f0e;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* ------footer------ */
+#main_footer{
+  width: 100%;
+}
+
+#main_footer a{
+  color: black;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}

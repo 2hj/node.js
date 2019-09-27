@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    .container_join
+      .login_wrap_join
+        #title_join_div
+          h1#title_join Create Account
+        form#join-form(action="/auth/join", method="post")
+          .input-group_join
+            label(for='id') ID
+            input#id_join(type='text' name='id' placeholder='id' required autofocus)
+          .input-group_join
+            label(for='n') Name
+            input#name_join(type='text' name='n' placeholder='name' required)
+          .input-group_join
+            label(for='pwd') Password
+            input#password_join(type='password' name='pwd' placeholder='password' required)
+          .error_message_join= joinError
+          button#join.btn(type='submit') Join
+  script(src='/javascripts/join.js')
